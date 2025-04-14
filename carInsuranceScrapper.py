@@ -14,31 +14,9 @@ chrome_options = Options()
 #chrome_options.add_argument("--disable-dev-shm-usage")
 
 # Replace with your ChromeDriver path
-driver_path = "/Users/amyverma/Downloads/chromedriver-mac-x64 2/chromedriver"  # Download from https://chromedriver.chromium.org/
+driver_path = "path"  # Download from https://chromedriver.chromium.org/
 service = Service(driver_path)
 driver = webdriver.Chrome(service=service, options=chrome_options)
-
-
-
-# from selenium import webdriver
-# from selenium.webdriver.common.by import By
-# from selenium.webdriver.chrome.service import Service
-# from selenium.webdriver.chrome.options import Options
-# from selenium.webdriver.support.ui import WebDriverWait
-# from selenium.webdriver.support import expected_conditions as EC
-# import pandas as pd
-# import time
-
-# # Setup Chrome options
-# chrome_options = Options()
-# # chrome_options.add_argument("--headless")  # Keep off for debugging
-# chrome_options.add_argument("--no-sandbox")
-# chrome_options.add_argument("--disable-dev-shm-usage")
-
-# # Replace with your ChromeDriver path
-# driver_path = "/path/to/chromedriver"  # Update with ChromeDriver 134 path
-# service = Service(driver_path)
-# driver = webdriver.Chrome(service=service, options=chrome_options)
 
 def handle_cookie_popup():
     try:
